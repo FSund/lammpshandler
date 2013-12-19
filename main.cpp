@@ -87,6 +87,9 @@ void writeLammpsFile_Ovito_v2() {
     //     http://sourceforge.net/p/ovito/git/ci/db4111567828d57ca7820042f71ec2a10dd2ed5b/tree/src/plugins/particles/importer/lammps/
     // For more info on the LAMMPS binary format, see the program "binary2txt" that comes with LAMMPS.
 
+    // NOTE: I just discovered that the experimental version of Ovito 2.x actually reads the old binary format as well
+    // as this newer format, so I guess this function isn't really needed. I'll leave it here anyway...
+
     vector<uint> atomTypes = {14, 8, 14};
     cout << atomTypes[0] << endl;
 
